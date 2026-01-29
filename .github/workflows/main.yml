@@ -1,6 +1,13 @@
+name: Simple Email Step Workflow
+
+on:
+  workflow_dispatch:   # manually run kar sakte ho
+  push:                # push par bhi chalega
+
 jobs:
   test:
+    runs-on: ubuntu-latest
+
     steps:
       - name: 23f3000651@ds.study.iitm.ac.in
         run: echo "Hello, world!"
-      
